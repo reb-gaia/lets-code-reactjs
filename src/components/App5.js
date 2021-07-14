@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App4 extends React.Component {
+class App5 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,6 +15,12 @@ class App4 extends React.Component {
 
   persistName = () => {
     this.setState({nome: this.state.txtNome});
+    sessionStorage.setItem('nome', this.state.txtNome); // save in cookie
+  }
+
+  componentDidMount() { // component done construction
+    const nome = sessionStorage.getItem('nome');
+    if(nome) this.setState({nome});
   }
 
   render() {
@@ -38,4 +44,4 @@ class App4 extends React.Component {
   }
 }
 
-export default App4;
+export default App5;
