@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App5 from './components/App5';
+import Lista from './components/Lista';
 
 
 ReactDOM.render(
   <React.StrictMode>
-		<App5 />
+		<Lista />
 	
   </React.StrictMode>,
   document.getElementById('root')
