@@ -4,7 +4,7 @@ class App3 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      nome: ''
+      nome: '',
     };
   }
 
